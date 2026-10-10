@@ -27,3 +27,28 @@
 .vote-count{font-size:12px;color:#c9ced7;white-space:nowrap}
 .vote-button{padding:8px 12px;cursor:pointer;white-space:nowrap}
 @media(max-width:760px){.request-layout{grid-template-columns:1fr}.request-form,.request-list-section{padding:18px}.request-card{align-items:flex-start}.request-card-actions{align-items:flex-end}.request-list-heading{align-items:flex-start}}
+
+/* Monthly willingness-to-pay poll */
+.poll-panel{margin:38px 0 0;background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:clamp(20px,4vw,32px)}
+.poll-panel h2{font-size:clamp(24px,3.5vw,34px);line-height:1.2;letter-spacing:-.035em;margin:10px 0}
+.poll-intro{color:var(--muted);max-width:720px;margin:0 0 22px}
+.poll-form fieldset{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.poll-form legend{font-size:13px;color:var(--muted);margin-bottom:10px}
+.poll-option{display:flex;align-items:center;gap:12px;min-width:0;padding:13px 14px;border:1px solid var(--line);border-radius:9px;background:var(--bg);cursor:pointer}
+.poll-option:has(input:checked){border-color:#aab2bf;background:#1a1e25}
+.poll-option input{accent-color:#e8ebf0;flex-shrink:0}
+.poll-option span{display:flex;flex-direction:column;gap:1px}
+.poll-option strong{font-size:14px}
+.poll-option small{font-size:12px;color:var(--muted)}
+.poll-form button{margin-top:16px;cursor:pointer}
+.poll-results{border-top:1px solid var(--line);margin-top:26px;padding-top:20px}
+.poll-results-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.poll-results-heading h3{font-size:17px;margin:0}
+.poll-results-heading>span{font-size:12px;color:var(--muted)}
+.poll-result{margin:13px 0}
+.poll-result-label{display:flex;justify-content:space-between;gap:12px;font-size:13px;margin-bottom:6px}
+.poll-result-label span:last-child{color:var(--muted);white-space:nowrap}
+.poll-bar-track{height:7px;border-radius:99px;background:#08090b;overflow:hidden}
+.poll-bar{height:100%;border-radius:99px;background:#b8c0cb;transition:width .25s ease}
+.poll-form fieldset:disabled{opacity:.6}
+@media(max-width:560px){.poll-form fieldset{grid-template-columns:1fr}.poll-panel{padding:18px}.poll-results-heading{align-items:flex-start;flex-direction:column}}
