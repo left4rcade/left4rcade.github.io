@@ -1,12 +1,75 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Games supported by Left4RCade."><title>Games — Left4RCade</title><link rel="stylesheet" href="./styles.css"></head><body>
-<header class="site-header"><div class="container nav"><a class="brand" href="./"><img src="./left4rcade_fc.png" alt="Left4RCade FightClub"></a><nav><a class="active" href="./games.html">Games</a><a href="./requests.html">Game Requests</a><a href="./pricing.html">Pricing Poll</a><a class="nav-cta" href="https://github.com/left4rcade/left4rcade">GitHub</a></nav></div></header>
-<main class="page"><div class="container"><span class="eyebrow">SUPPORTED GAMES</span><h1>Play the classics.</h1><p class="lead">These arcade fighters are currently supported by Left4RCade.</p><div class="games-grid">
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/twcup98.png" alt="Tecmo World Cup 98 arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Tecmo World Cup 98</h2><p>Arcade football action.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex.png" alt="Street Fighter EX arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Street Fighter EX</h2><p>3D-era Street Fighter arcade action.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfexp.png" alt="Street Fighter EX Plus arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Street Fighter EX Plus</h2><p>Expanded EX arcade roster.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex2.png" alt="Street Fighter EX2 arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Street Fighter EX2</h2><p>Next-generation EX fighting.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex2p.png" alt="Street Fighter EX2 Plus arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Street Fighter EX2 Plus</h2><p>Expanded EX2 experience.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/rvschool.png" alt="Rival Schools arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Rival Schools</h2><p>Arcade team-based fighting.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/tekken3.png" alt="Tekken 3 arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Tekken 3</h2><p>Classic 3D arcade fighting.</p></article>
-<article class="game-card"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/tektagt.png" alt="Tekken Tag Tournament arcade screenshot" loading="lazy"></div><span class="game-status">SUPPORTED</span><h2>Tekken Tag Tournament</h2><p>Tag-team arcade battles.</p></article>
-</div></div></main><footer><div class="container footer"><span>© Left4RCade</span><span>Classic arcade fighters. Modern netplay.</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore games supported by Left4RCade and discover what the community wants to play.">
+<title>Games — Left4RCade</title><link rel="stylesheet" href="./styles.css">
+</head>
+<body class="games-page">
+<header class="site-header"><div class="container nav">
+<a class="brand" href="./"><img src="./left4rcade_fc.png" alt="Left4RCade FightClub"></a>
+<nav><a href="./">Home</a><a class="active" href="./games.html">Games</a><a href="./requests.html">Game Requests</a><a href="./pricing.html">Pricing Poll</a><a class="nav-cta" href="https://github.com/left4rcade/left4rcade">GitHub</a></nav>
+</div></header>
+<main>
+<section class="games-hero"><div class="container games-hero-inner">
+<div class="games-hero-icon" aria-hidden="true">🎮</div><div class="games-hero-copy"><span class="eyebrow">THE ARCADE IS OPEN</span><h1>Games</h1><p>Explore the supported games, see what's available<br class="desktop-break"> and discover what the community wants to play.</p></div>
+</div></section>
+<section class="container games-browser" aria-label="Browse games">
+<div class="games-toolbar"><div class="game-filters" role="group" aria-label="Filter games by category">
+<button class="game-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+<button class="game-filter" type="button" data-filter="fighting" aria-pressed="false">Fighting</button>
+<button class="game-filter" type="button" data-filter="beat-em-up" aria-pressed="false">Beat 'em Up</button>
+<button class="game-filter" type="button" data-filter="sports" aria-pressed="false">Sports</button>
+<button class="game-filter" type="button" data-filter="racing" aria-pressed="false">Racing</button>
+<button class="game-filter" type="button" data-filter="shooter" aria-pressed="false">Shooter</button>
+<button class="game-filter" type="button" data-filter="platform" aria-pressed="false">Platform</button>
+<button class="game-filter" type="button" data-filter="other" aria-pressed="false">Other</button>
+</div><label class="game-search"><span aria-hidden="true">⌕</span><input id="game-search" type="search" placeholder="Search games..." autocomplete="off" aria-label="Search games"></label></div>
+<p class="games-count" id="games-count" aria-live="polite">8 supported games</p>
+<div class="games-grid games-grid-modern" id="games-grid">
+<article class="game-card game-card-modern" data-name="Tecmo World Cup 98" data-category="sports"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/twcup98.png" alt="Tecmo World Cup 98 arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Tecmo World Cup 98</h2><p class="game-platform">🎮 Arcade · Sports</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Street Fighter EX" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex.png" alt="Street Fighter EX arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Street Fighter EX</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Street Fighter EX Plus" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfexp.png" alt="Street Fighter EX Plus arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Street Fighter EX Plus</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Street Fighter EX2" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex2.png" alt="Street Fighter EX2 arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Street Fighter EX2</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Street Fighter EX2 Plus" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/sfex2p.png" alt="Street Fighter EX2 Plus arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Street Fighter EX2 Plus</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Rival Schools" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/rvschool.png" alt="Rival Schools arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Rival Schools</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Tekken 3" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/tekken3.png" alt="Tekken 3 arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Tekken 3</h2><p class="game-platform">🎮 Namco System 12 · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+<article class="game-card game-card-modern" data-name="Tekken Tag Tournament" data-category="fighting"><div class="game-art"><img src="https://data.spludlow.co.uk/mame/machine/tektagt.png" alt="Tekken Tag Tournament arcade screenshot" loading="lazy"></div><div class="game-card-body"><span class="game-status">SUPPORTED</span><h2>Tekken Tag Tournament</h2><p class="game-platform">🎮 Arcade · Fighting</p><a class="game-request-button" href="./requests.html">Request / Vote <span aria-hidden="true">→</span></a></div></article>
+</div><p class="games-empty" id="games-empty" hidden>No games match your search. Try another name or category.</p>
+</section></main>
+<footer><div class="container footer"><span>© Left4RCade</span><span>Classic arcade fighters. Modern netplay.</span></div></footer>
+<script>
+(() => {
+ const cards = [...document.querySelectorAll('.game-card-modern')];
+ const filters = [...document.querySelectorAll('.game-filter')];
+ const search = document.getElementById('game-search');
+ const count = document.getElementById('games-count');
+ const empty = document.getElementById('games-empty');
+ let category = 'all';
+ function render() {
+   const term = search.value.trim().toLowerCase();
+   let visible = 0;
+   cards.forEach(card => {
+     const matchesCategory = category === 'all' || card.dataset.category.split(' ').includes(category);
+     const matchesSearch = card.dataset.name.toLowerCase().includes(term);
+     const show = matchesCategory && matchesSearch;
+     card.hidden = !show;
+     if (show) visible++;
+   });
+   count.textContent = visible + (visible === 1 ? ' game' : ' games') + ' found';
+   empty.hidden = visible !== 0;
+ }
+ filters.forEach(button => button.addEventListener('click', () => {
+   category = button.dataset.filter;
+   filters.forEach(item => {
+     const active = item === button;
+     item.classList.toggle('active', active);
+     item.setAttribute('aria-pressed', String(active));
+   });
+   render();
+ }));
+ search.addEventListener('input', render);
+ render();
+})();
+</script>
+</body></html>
