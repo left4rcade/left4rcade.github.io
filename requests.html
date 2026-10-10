@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Suggest arcade games for Left4RCade and vote for community requests.">
+  <title>Game Requests — Left4RCade</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="./"><img src="./left4rcade_fc.png" alt="Left4RCade FightClub"></a><nav><a href="./games.html">Games</a><a class="active" href="./requests.html">Game Requests</a><a class="nav-cta" href="https://github.com/left4rcade/left4rcade">GitHub</a></nav></div></header>
+<main class="page"><div class="container">
+  <span class="eyebrow">COMMUNITY PICKS</span>
+  <h1>Game requests.</h1>
+  <p class="lead">Suggest a classic arcade game and vote for the games you want to see on Left4RCade.</p>
+  <section class="request-layout">
+    <form class="request-form" id="request-form">
+      <h2>Suggest a game</h2>
+      <label for="game-name">Game name <span aria-hidden="true">*</span></label>
+      <input id="game-name" name="name" maxlength="120" required placeholder="e.g. Tekken 2">
+      <label for="game-platform">Platform / version <span class="optional">(optional)</span></label>
+      <input id="game-platform" name="platform" maxlength="120" placeholder="e.g. Arcade / PlayStation">
+      <label for="game-reason">Notes <span class="optional">(optional)</span></label>
+      <textarea id="game-reason" name="reason" maxlength="1000" rows="3" placeholder="Anything useful to know"></textarea>
+      <button class="button primary" type="submit" id="submit-request">Submit request</button>
+      <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+    </form>
+    <section class="request-list-section">
+      <div class="request-list-heading"><div><h2>Community requests</h2><p class="muted-copy">Vote once for each game.</p></div><button class="button secondary refresh-button" id="refresh-requests" type="button">Refresh</button></div>
+      <p class="form-message" id="list-message" role="status" aria-live="polite">Loading requests…</p>
+      <div class="request-list" id="request-list"></div>
+    </section>
+  </section>
+</div></main>
+<footer><div class="container footer"><span>© Left4RCade</span><span>Classic arcade fighters. Modern netplay.</span></div></footer>
+<script>
+(() => {
+  const API = "https://left4rcade-api.l-mehmet-hilmi-l.workers.dev";
+  const form = document.getElementById("request-form");
+  const nameInput = document.getElementById("game-name");
+  const platformInput = document.getElementById("game-platform");
+  const reasonInput = document.getElementById("game-reason");
+  const submitButton = document.getElementById("submit-request");
+  const formMessage = document.getElementById("form-message");
+  const listMessage = document.getElementById("list-message");
+  const list = document.getElementById("request-list");
+  const refreshButton = document.getElementById("refresh-requests");
+
+  function message(element, text, kind) {
+    element.textContent = text || "";
+    element.className = "form-message" + (kind ? " " + kind : "");
+  }
+
+  function renderRequests(requests) {
+    list.replaceChildren();
+    if (!Array.isArray(requests) || requests.length === 0) {
+      message(listMessage, "No game requests yet. Be the first to suggest one.");
+      return;
+    }
+    message(listMessage, requests.length + (requests.length === 1 ? " request" : " requests"));
+    for (const request of requests) {
+      const card = document.createElement("article");
+      card.className = "request-card";
+      const main = document.createElement("div");
+      main.className = "request-card-main";
+      const title = document.createElement("h3");
+      title.textContent = request.name || "Untitled game";
+      main.appendChild(title);
+      if (request.platform) {
+        const platform = document.createElement("p");
+        platform.className = "request-platform";
+        platform.textContent = request.platform;
+        main.appendChild(platform);
+      }
+      if (request.reason) {
+        const reason = document.createElement("p");
+        reason.className = "request-reason";
+        reason.textContent = request.reason;
+        main.appendChild(reason);
+      }
+      const actions = document.createElement("div");
+      actions.className = "request-card-actions";
+      const votes = document.createElement("span");
+      votes.className = "vote-count";
+      votes.textContent = String(Number(request.votes) || 0) + ((Number(request.votes) || 0) === 1 ? " vote" : " votes");
+      const voteButton = document.createElement("button");
+      voteButton.type = "button";
+      voteButton.className = "button secondary vote-button";
+      voteButton.textContent = "▲ Vote";
+      voteButton.addEventListener("click", () => voteFor(request.id, voteButton, votes));
+      actions.append(votes, voteButton);
+      card.append(main, actions);
+      list.appendChild(card);
+    }
+  }
+
+  async function loadRequests() {
+    refreshButton.disabled = true;
+    message(listMessage, "Loading requests…");
+    try {
+      const response = await fetch(API + "/api/requests", { headers: { "Accept": "application/json" }, cache: "no-store" });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not load requests.");
+      renderRequests(data.requests);
+    } catch (error) {
+      message(listMessage, "Could not load requests. Please check your connection and try again.", "error");
+    } finally {
+      refreshButton.disabled = false;
+    }
+  }
+
+  async function voteFor(id, button, votesLabel) {
+    if (!Number.isInteger(Number(id)) || Number(id) < 1) return;
+    button.disabled = true;
+    const original = button.textContent;
+    button.textContent = "Voting…";
+    try {
+      const response = await fetch(API + "/api/requests/" + encodeURIComponent(id) + "/vote", {
+        method: "POST",
+        headers: { "Accept": "application/json" }
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Vote failed.");
+      if (data.request) votesLabel.textContent = String(Number(data.request.votes) || 0) + ((Number(data.request.votes) || 0) === 1 ? " vote" : " votes");
+      button.textContent = "Voted ✓";
+      message(listMessage, "Your vote has been counted.", "success");
+    } catch (error) {
+      message(listMessage, error.message || "Could not submit your vote.", "error");
+      button.textContent = original;
+      button.disabled = false;
+      return;
+    }
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!nameInput.value.trim()) {
+      message(formMessage, "Please enter a game name.", "error");
+      nameInput.focus();
+      return;
+    }
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting…";
+    message(formMessage, "");
+    try {
+      const response = await fetch(API + "/api/requests", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          name: nameInput.value.trim(),
+          platform: platformInput.value.trim(),
+          reason: reasonInput.value.trim()
+        })
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not submit the request.");
+      form.reset();
+      message(formMessage, "Game request submitted.", "success");
+      await loadRequests();
+    } catch (error) {
+      message(formMessage, error.message || "Could not submit the request. Please try again.", "error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit request";
+    }
+  });
+
+  refreshButton.addEventListener("click", loadRequests);
+  loadRequests();
+})();
+</script>
+</body>
+</html>
