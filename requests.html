@@ -15,8 +15,30 @@
   <p class="lead">Suggest a classic arcade game and vote for the games you want to see on Left4RCade.</p>
   <aside class="community-guidelines" role="note" aria-label="Community guidelines" style="margin: 1.5rem 0; padding: 1rem 1.25rem; border: 1px solid var(--border, #343434); border-radius: 12px;">
     <h2 style="margin: 0 0 .5rem; font-size: 1.1rem;">Community guidelines</h2>
-    <p style="margin: 0;">Requests and notes are public. Please submit genuine game suggestions and use appropriate language. Offensive content, spam, duplicate requests, or vote manipulation may be removed. Do not include personal or sensitive information. Abuse-prevention measures may be used; this page does not claim that submissions are tracked by IP address.</p>
+    <p style="margin: 0;">Requests and notes are public. Please submit genuine game suggestions and use appropriate language. Offensive content, spam, duplicate requests, or vote manipulation may be removed. Do not include personal or sensitive information. A hashed identifier derived from your network address and browser information may be used to prevent duplicate votes and limit abuse. The application does not store raw IP addresses in its game-request or poll tables; provider-level logs may be handled separately.</p>
   </aside>
+  <section class="poll-panel" aria-labelledby="pricing-poll-title">
+    <span class="eyebrow">COMMUNITY POLL</span>
+    <h2 id="pricing-poll-title">How much would you pay monthly for Left4RCade?</h2>
+    <p class="poll-intro">Help us understand what the community would be willing to pay. This is a survey only — no payment will be taken.</p>
+    <form id="pricing-poll-form" class="poll-form">
+      <fieldset id="pricing-poll-options">
+        <legend>Choose one answer</legend>
+        <label class="poll-option"><input type="radio" name="amount" value="$0" required><span><strong>$0</strong><small>I would use it for free</small></span></label>
+        <label class="poll-option"><input type="radio" name="amount" value="$1"><span><strong>$1 / month</strong></span></label>
+        <label class="poll-option"><input type="radio" name="amount" value="$5"><span><strong>$5 / month</strong></span></label>
+        <label class="poll-option"><input type="radio" name="amount" value="$10"><span><strong>$10 / month</strong></span></label>
+        <label class="poll-option"><input type="radio" name="amount" value="$20+"><span><strong>$20+ / month</strong></span></label>
+        <label class="poll-option"><input type="radio" name="amount" value="Not sure"><span><strong>Not sure yet</strong></span></label>
+      </fieldset>
+      <button class="button primary" id="submit-poll" type="submit">Submit my answer</button>
+      <p class="form-message" id="poll-message" role="status" aria-live="polite"></p>
+    </form>
+    <div class="poll-results" aria-live="polite">
+      <div class="poll-results-heading"><h3>Community results</h3><span id="poll-total">Loading…</span></div>
+      <div id="poll-results-list"></div>
+    </div>
+  </section>
   <section class="request-layout">
     <form class="request-form" id="request-form">
       <h2>Suggest a game</h2>
@@ -49,6 +71,14 @@
   const listMessage = document.getElementById("list-message");
   const list = document.getElementById("request-list");
   const refreshButton = document.getElementById("refresh-requests");
+  const pollForm = document.getElementById("pricing-poll-form");
+  const pollOptions = document.getElementById("pricing-poll-options");
+  const pollButton = document.getElementById("submit-poll");
+  const pollMessage = document.getElementById("poll-message");
+  const pollTotal = document.getElementById("poll-total");
+  const pollResultsList = document.getElementById("poll-results-list");
+  const pollChoices = ["$0", "$1", "$5", "$10", "$20+", "Not sure"];
+
 
   function message(element, text, kind) {
     element.textContent = text || "";
@@ -97,6 +127,79 @@
       list.appendChild(card);
     }
   }
+
+
+  function renderPollResults(results, total) {
+    pollResultsList.replaceChildren();
+    const counts = new Map((Array.isArray(results) ? results : []).map(item => [item.amount, Number(item.votes) || 0]));
+    for (const amount of pollChoices) {
+      const count = counts.get(amount) || 0;
+      const row = document.createElement("div");
+      row.className = "poll-result";
+      const label = document.createElement("div");
+      label.className = "poll-result-label";
+      const name = document.createElement("span");
+      name.textContent = amount === "$0" ? "$0 — Free" : amount === "Not sure" ? "Not sure yet" : amount + (amount === "$20+" ? " / month" : " / month");
+      const countLabel = document.createElement("span");
+      countLabel.textContent = String(count) + (count === 1 ? " vote" : " votes");
+      label.append(name, countLabel);
+      const track = document.createElement("div");
+      track.className = "poll-bar-track";
+      const bar = document.createElement("div");
+      bar.className = "poll-bar";
+      bar.style.width = (total > 0 ? Math.round(count / total * 100) : 0) + "%";
+      track.appendChild(bar);
+      row.append(label, track);
+      pollResultsList.appendChild(row);
+    }
+    pollTotal.textContent = String(total) + (total === 1 ? " response" : " responses");
+  }
+
+  async function loadPoll() {
+    try {
+      const response = await fetch(API + "/api/pricing-poll", { headers: { "Accept": "application/json" }, cache: "no-store" });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not load poll.");
+      renderPollResults(data.results, Number(data.total) || 0);
+      if (data.hasVoted) {
+        pollButton.disabled = true;
+        pollOptions.disabled = true;
+        message(pollMessage, "Thanks — your response has already been recorded.", "success");
+      }
+    } catch (error) {
+      pollTotal.textContent = "Unavailable";
+      message(pollMessage, "The poll will be available once its API is enabled.", "error");
+    }
+  }
+
+  pollForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const selected = pollForm.querySelector('input[name="amount"]:checked');
+    if (!selected) {
+      message(pollMessage, "Please choose an answer.", "error");
+      return;
+    }
+    pollButton.disabled = true;
+    pollButton.textContent = "Submitting…";
+    message(pollMessage, "");
+    try {
+      const response = await fetch(API + "/api/pricing-poll", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ amount: selected.value })
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not submit your answer.");
+      message(pollMessage, "Thanks — your answer has been recorded.", "success");
+      pollOptions.disabled = true;
+      renderPollResults(data.results, Number(data.total) || 0);
+    } catch (error) {
+      message(pollMessage, error.message || "Could not submit your answer. Please try again.", "error");
+      pollButton.disabled = false;
+    } finally {
+      pollButton.textContent = "Submit my answer";
+    }
+  });
 
   async function loadRequests() {
     refreshButton.disabled = true;
@@ -171,6 +274,7 @@
 
   refreshButton.addEventListener("click", loadRequests);
   loadRequests();
+  loadPoll();
 })();
 </script>
 </body>
