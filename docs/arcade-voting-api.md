@@ -2,6 +2,18 @@
 
 The website's `arcade.html` uses two routes on the existing Worker. The Worker source is managed in the Cloudflare dashboard and is not present in the inspected GitHub repositories, so these changes must be added to that Worker before voting can be enabled.
 
+## Cloudflare dashboard checklist
+
+Do this only after reviewing the website PR. Keep the existing Worker and D1 database; do not create a replacement.
+
+1. In Cloudflare, open **Workers & Pages** and select the existing `left4rcade-api` Worker.
+2. Open its editor and copy the current source somewhere safe as a rollback backup before editing.
+3. Open **Storage & Databases → D1 SQL Database → left4rcade → Console**. Run the migration below. It creates only the new `arcade_votes` table and its indexes.
+4. Return to the Worker editor. Add the two helper functions before `export default`, then add the two route handlers before the final 404 response. Do not replace the existing request or pricing-poll handlers.
+5. Save/deploy the Worker only after checking the full script has no duplicate variable names and the existing routes are still present.
+6. Test the new GET endpoint, then test Up, repeated Up (withdraw), Up-to-Down (switch), and an invalid ROM ID. Also test the existing Game Requests and Pricing Poll pages.
+7. If any existing route fails, restore the saved Worker source immediately. The new D1 table can remain unused without affecting the old tables.
+
 ## 1. D1 migration
 
 Apply `migrations/0001_arcade_votes.sql` to the existing D1 database named `left4rcade`. It creates only `arcade_votes`; it does not alter `games`, `votes`, `pricing_poll_votes`, or `rate_limits`.
