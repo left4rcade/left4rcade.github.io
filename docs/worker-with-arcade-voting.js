@@ -35,7 +35,7 @@ async function sha256(value) {
 async function getVoterHash(request) {
   const userAgent = request.headers.get("User-Agent") || "unknown";
   return sha256(
-    \`\${getClientIp(request)}|\${userAgent}|left4rcade-vote-v1\`
+    `${getClientIp(request)}|${userAgent}|left4rcade-vote-v1`
   );
 }
 
@@ -43,8 +43,8 @@ function cleanString(value, maxLength) {
   if (typeof value !== "string") return "";
 
   return value
-    .replace(/[\\u0000-\\u001F\\u007F]/g, " ")
-    .replace(/\\s+/g, " ")
+    .replace(/[\u0000-\u001F\u007F]/g, " ")
+    .replace(/\s+/g, " ")
     .trim()
     .slice(0, maxLength);
 }
@@ -53,7 +53,7 @@ async function checkRateLimit(request, env, action, limit) {
   const ip = getClientIp(request);
   const userAgent = request.headers.get("User-Agent") || "unknown";
   const rateKey = await sha256(
-    \`\${ip}|\${userAgent}|left4rcade-rate-v1\`
+    `${ip}|${userAgent}|left4rcade-rate-v1`
   );
 
   const windowStart = Math.floor(Date.now() / 60000);
@@ -63,19 +63,19 @@ async function checkRateLimit(request, env, action, limit) {
     "DELETE FROM rate_limits WHERE window_start < ?"
   ).bind(windowStart - 1440).run();
 
-  await env.DB.prepare(\`
+  await env.DB.prepare(`
     INSERT INTO rate_limits
       (rate_key, action, window_start, request_count)
     VALUES (?, ?, ?, 1)
     ON CONFLICT (rate_key, action, window_start)
     DO UPDATE SET request_count = request_count + 1
-  \`).bind(rateKey, action, windowStart).run();
+  `).bind(rateKey, action, windowStart).run();
 
-  const result = await env.DB.prepare(\`
+  const result = await env.DB.prepare(`
     SELECT request_count
     FROM rate_limits
     WHERE rate_key = ? AND action = ? AND window_start = ?
-  \`).bind(rateKey, action, windowStart).first();
+  `).bind(rateKey, action, windowStart).first();
 
   return (result?.request_count ?? 0) <= limit;
 }
@@ -110,7 +110,7 @@ async function readJsonBody(request) {
 async function getArcadeVoterHash(request) {
   const userAgent = request.headers.get("User-Agent") || "unknown";
   return sha256(
-    \`\${getClientIp(request)}|\${userAgent}|left4rcade-arcade-vote-v1\`
+    `${getClientIp(request)}|${userAgent}|left4rcade-arcade-vote-v1`
   );
 }
 
@@ -151,7 +151,7 @@ async function isKnownArcadeRom(romId) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    const path = url.pathname.replace(/\\/+$/, "") || "/";
+    const path = url.pathname.replace(/\/+$/, "") || "/";
 
     if (request.method === "OPTIONS") {
       return new Response(null, {
@@ -163,11 +163,11 @@ export default {
     try {
       // List game requests.
       if (path === "/api/requests" && request.method === "GET") {
-        const result = await env.DB.prepare(\`
+        const result = await env.DB.prepare(`
           SELECT id, name, platform, reason, created_at, votes
           FROM games
           ORDER BY votes DESC, created_at ASC
-        \`).all();
+        `).all();
 
         return json({ requests: result.results || [] });
       }
@@ -198,12 +198,12 @@ export default {
           return json({ error: "Game name is required." }, 400);
         }
 
-        const duplicate = await env.DB.prepare(\`
+        const duplicate = await env.DB.prepare(`
           SELECT id
           FROM games
           WHERE lower(trim(name)) = lower(trim(?))
           LIMIT 1
-        \`).bind(name).first();
+        `).bind(name).first();
 
         if (duplicate) {
           return json({
@@ -215,10 +215,10 @@ export default {
         let insertResult;
 
         try {
-          insertResult = await env.DB.prepare(\`
+          insertResult = await env.DB.prepare(`
             INSERT INTO games (name, platform, reason)
             VALUES (?, ?, ?)
-          \`).bind(name, platform, reason).run();
+          `).bind(name, platform, reason).run();
         } catch (error) {
           // Handles concurrent submissions caught by the unique index.
           if (String(error?.message || error).includes(
@@ -232,38 +232,38 @@ export default {
           throw error;
         }
 
-        const game = await env.DB.prepare(\`
+        const game = await env.DB.prepare(`
           SELECT id, name, platform, reason, created_at, votes
           FROM games
           WHERE id = ?
-        \`).bind(insertResult.meta.last_row_id).first();
+        `).bind(insertResult.meta.last_row_id).first();
 
         return json({ request: game }, 201);
       }
 
       // Monthly willingness-to-pay poll: read results.
       if (path === "/api/pricing-poll" && request.method === "GET") {
-        const results = await env.DB.prepare(\`
+        const results = await env.DB.prepare(`
           SELECT amount, COUNT(*) AS votes
           FROM pricing_poll_votes
           GROUP BY amount
-        \`).all();
+        `).all();
 
-        const totalRow = await env.DB.prepare(\`
+        const totalRow = await env.DB.prepare(`
           SELECT COUNT(*) AS total
           FROM pricing_poll_votes
-        \`).first();
+        `).first();
 
         const userAgent = request.headers.get("User-Agent") || "unknown";
         const pollHash = await sha256(
-          \`\${getClientIp(request)}|\${userAgent}|left4rcade-pricing-poll-v1\`
+          `${getClientIp(request)}|${userAgent}|left4rcade-pricing-poll-v1`
         );
 
-        const existingVote = await env.DB.prepare(\`
+        const existingVote = await env.DB.prepare(`
           SELECT 1 AS voted
           FROM pricing_poll_votes
           WHERE voter_hash = ?
-        \`).bind(pollHash).first();
+        `).bind(pollHash).first();
 
         return json({
           results: results.results || [],
@@ -299,13 +299,13 @@ export default {
 
         const userAgent = request.headers.get("User-Agent") || "unknown";
         const pollHash = await sha256(
-          \`\${getClientIp(request)}|\${userAgent}|left4rcade-pricing-poll-v1\`
+          `${getClientIp(request)}|${userAgent}|left4rcade-pricing-poll-v1`
         );
 
-        const inserted = await env.DB.prepare(\`
+        const inserted = await env.DB.prepare(`
           INSERT OR IGNORE INTO pricing_poll_votes (voter_hash, amount)
           VALUES (?, ?)
-        \`).bind(pollHash, amount).run();
+        `).bind(pollHash, amount).run();
 
         if ((inserted.meta?.changes ?? 0) === 0) {
           return json({
@@ -313,16 +313,16 @@ export default {
           }, 409);
         }
 
-        const results = await env.DB.prepare(\`
+        const results = await env.DB.prepare(`
           SELECT amount, COUNT(*) AS votes
           FROM pricing_poll_votes
           GROUP BY amount
-        \`).all();
+        `).all();
 
-        const totalRow = await env.DB.prepare(\`
+        const totalRow = await env.DB.prepare(`
           SELECT COUNT(*) AS total
           FROM pricing_poll_votes
-        \`).first();
+        `).first();
 
         return json({
           message: "Poll response recorded.",
@@ -334,7 +334,7 @@ export default {
       // Arcade ROM voting: list aggregate counts and this visitor's active votes.
       if (path === "/api/arcade-votes" && request.method === "GET") {
         const voterHash = await getArcadeVoterHash(request);
-        const result = await env.DB.prepare(\`
+        const result = await env.DB.prepare(`
           SELECT
             rom_id,
             SUM(CASE WHEN vote = 1 THEN 1 ELSE 0 END) AS up_votes,
@@ -343,13 +343,13 @@ export default {
           FROM arcade_votes
           WHERE vote != 0
           GROUP BY rom_id
-        \`).bind(voterHash).all();
+        `).bind(voterHash).all();
 
         return json({ votes: result.results || [] });
       }
 
       // Arcade ROM voting: toggle an existing direction or switch directions.
-      const arcadeVoteMatch = path.match(/^\\/api\\/arcade\\/([^/]+)\\/vote$/);
+      const arcadeVoteMatch = path.match(/^\/api\/arcade\/([^/]+)\/vote$/);
 
       if (arcadeVoteMatch && request.method === "POST") {
         let romId;
@@ -395,7 +395,7 @@ export default {
         const voterHash = await getArcadeVoterHash(request);
         const requestedVote = direction === "up" ? 1 : -1;
 
-        await env.DB.prepare(\`
+        await env.DB.prepare(`
           INSERT INTO arcade_votes (rom_id, voter_hash, vote, updated_at)
           VALUES (?, ?, ?, datetime('now'))
           ON CONFLICT (rom_id, voter_hash) DO UPDATE SET
@@ -404,16 +404,16 @@ export default {
               ELSE excluded.vote
             END,
             updated_at = datetime('now')
-        \`).bind(romId, voterHash, requestedVote).run();
+        `).bind(romId, voterHash, requestedVote).run();
 
-        const totals = await env.DB.prepare(\`
+        const totals = await env.DB.prepare(`
           SELECT
             SUM(CASE WHEN vote = 1 THEN 1 ELSE 0 END) AS up_votes,
             SUM(CASE WHEN vote = -1 THEN 1 ELSE 0 END) AS down_votes,
             MAX(CASE WHEN voter_hash = ? THEN vote ELSE 0 END) AS my_vote
           FROM arcade_votes
           WHERE rom_id = ?
-        \`).bind(voterHash, romId).first();
+        `).bind(voterHash, romId).first();
 
         return json({
           rom_id: romId,
@@ -424,7 +424,7 @@ export default {
       }
 
       // Vote for an existing game request.
-      const voteMatch = path.match(/^\\/api\\/requests\\/(\\d+)\\/vote$/);
+      const voteMatch = path.match(/^\/api\/requests\/(\d+)\/vote$/);
 
       if (voteMatch && request.method === "POST") {
         const gameId = Number(voteMatch[1]);
@@ -456,13 +456,13 @@ export default {
         // D1 batch executes these statements transactionally.
         // INSERT OR IGNORE protects against duplicate and concurrent votes.
         const results = await env.DB.batch([
-          env.DB.prepare(\`
+          env.DB.prepare(`
             INSERT OR IGNORE INTO votes (game_id, voter_hash)
             VALUES (?, ?)
-          \`).bind(gameId, voterHash),
+          `).bind(gameId, voterHash),
 
           // Reconcile the counter against the actual vote records.
-          env.DB.prepare(\`
+          env.DB.prepare(`
             UPDATE games
             SET votes = (
               SELECT COUNT(*)
@@ -470,7 +470,7 @@ export default {
               WHERE votes.game_id = games.id
             )
             WHERE id = ?
-          \`).bind(gameId)
+          `).bind(gameId)
         ]);
 
         const inserted = results[0]?.meta?.changes ?? 0;
@@ -481,11 +481,11 @@ export default {
           }, 409);
         }
 
-        const updatedGame = await env.DB.prepare(\`
+        const updatedGame = await env.DB.prepare(`
           SELECT id, name, platform, reason, created_at, votes
           FROM games
           WHERE id = ?
-        \`).bind(gameId).first();
+        `).bind(gameId).first();
 
         return json({
           message: "Vote recorded successfully.",
