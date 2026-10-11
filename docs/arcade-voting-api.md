@@ -86,7 +86,7 @@ if (arcadeVoteMatch && request.method === "POST") {
     return json({ error: "Invalid ROM ID." }, 400);
   }
 
-  const allowed = await checkRateLimit(request, env, "arcade-vote", 15);
+  const allowed = await checkRateLimit(request, env, `arcade-vote:${romId}`, 15);
   if (!allowed) {
     return json({ error: "Too many voting attempts. Please try again next minute." }, 429);
   }
@@ -143,7 +143,7 @@ if (arcadeVoteMatch && request.method === "POST") {
 - The primary key `(rom_id, voter_hash)` prevents more than one row per visitor and ROM.
 - Withdrawn votes remain as `0` rows for clean toggling, but are excluded from counts.
 - The separate hash suffix prevents arcade votes from reusing the same identifier as request votes.
-- A separate `arcade-vote` rate-limit action leaves the existing vote limits untouched.
+- A separate rate-limit action per ROM (`arcade-vote:<romId>`) leaves the existing vote limits untouched and prevents activity on one ROM from blocking votes on other ROMs.
 - Existing request and pricing-poll endpoints remain unchanged.
 
 Before deploying the Worker change, verify the JSON root shape and test both routes against a non-production copy or during a controlled test. After deploying, test Up, repeat Up (withdraw), Up-to-Down, invalid ROM, invalid direction, rate limiting, and that Game Requests and Pricing Poll still work.
