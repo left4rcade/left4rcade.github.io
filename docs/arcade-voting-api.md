@@ -58,7 +58,7 @@ if (path === "/api/arcade-votes" && request.method === "GET") {
 }
 
 // Arcade ROM voting: toggle or switch this visitor's vote.
-const arcadeVoteMatch = path.match(/^\\/api\\/arcade\\/([^/]+)\\/vote$/);
+const arcadeVoteMatch = path.match(/^\/api\/arcade\/([^/]+)\/vote$/);
 
 if (arcadeVoteMatch && request.method === "POST") {
   let romId;
