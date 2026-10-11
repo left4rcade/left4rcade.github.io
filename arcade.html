@@ -219,7 +219,7 @@
     pageLabel.textContent = "Page " + page + " of " + pageCount;
     setStatus(filtered.length.toLocaleString() + " ROMs · showing " +
       (filtered.length ? ((page - 1) * PAGE_SIZE + 1) + "–" + Math.min(page * PAGE_SIZE, filtered.length) : "0") +
-      " · " + (voteMap.size ? "vote totals loaded" : "no votes recorded yet"));
+      " · " + (window.arcadeVotingAvailable ? (voteMap.size ? "vote totals loaded" : "no votes recorded yet") : "voting API unavailable; votes disabled"), !window.arcadeVotingAvailable);
   }
 
   async function castVote(id, direction, button) {
