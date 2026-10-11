@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Browse the Fightcade 2 arcade ROM catalogue and vote for the games you want to play on Left4RCade.">
+<title>Arcade ROM Catalogue — Left4RCade</title>
+<link rel="stylesheet" href="./styles.css">
+<style>
+.arcade-catalog{padding:54px 0 80px}.arcade-intro{margin-bottom:28px}.arcade-intro h1{font-size:clamp(38px,6vw,58px);line-height:1.05;letter-spacing:-.05em;margin:8px 0 14px}.arcade-intro p{color:var(--muted);max-width:760px}.arcade-toolbar{display:grid;grid-template-columns:minmax(220px,1fr) auto auto;gap:12px;margin:26px 0 14px}.arcade-control{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:9px;color:var(--text);padding:11px 12px;font:inherit;font-size:13px}.arcade-toolbar input{width:100%}.arcade-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.arcade-chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#d9dde3;font:inherit;font-size:12px;font-weight:750;cursor:pointer}.arcade-chip[aria-pressed="true"]{background:#f4f4f4;color:#090a0c;border-color:#f4f4f4}.arcade-meta-filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.arcade-status{font-size:13px;color:var(--muted);min-height:1.5em;margin:16px 0}.arcade-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.arcade-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--panel);display:flex;flex-direction:column}.arcade-card-art{aspect-ratio:16/10;background:#08090b;border-bottom:1px solid var(--line);overflow:hidden}.arcade-card-art img{display:block;width:100%;height:100%;object-fit:cover}.arcade-card-body{padding:12px;display:flex;flex:1;flex-direction:column;min-width:0}.arcade-rom{font-size:10px;letter-spacing:.08em;color:var(--muted);overflow-wrap:anywhere}.arcade-card h2{font-size:15px;line-height:1.35;margin:5px 0 7px;overflow-wrap:anywhere}.arcade-details{font-size:11px;color:var(--muted);margin:0 0 10px;overflow-wrap:anywhere}.arcade-score{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:auto;padding-top:8px;font-size:12px;color:var(--muted)}.arcade-score strong{color:var(--text);font-variant-numeric:tabular-nums}.arcade-vote-row{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.arcade-vote{padding:8px 6px;border:1px solid var(--line);border-radius:7px;background:#0d0f13;color:var(--text);font:inherit;font-size:12px;font-weight:750;cursor:pointer}.arcade-vote:hover:not(:disabled){border-color:#7a8493}.arcade-vote[aria-pressed="true"]{background:#e8ebf0;color:#090a0c;border-color:#e8ebf0}.arcade-vote:disabled{opacity:.55;cursor:not-allowed}.arcade-pagination{display:flex;justify-content:center;align-items:center;gap:14px;margin:28px 0 0}.arcade-pagination button{cursor:pointer}.arcade-empty{padding:30px;text-align:center;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}.arcade-error{color:#ffaaaa}.arcade-note{font-size:12px;color:var(--muted)}@media(max-width:1050px){.arcade-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.arcade-toolbar{grid-template-columns:1fr 1fr}.arcade-toolbar input{grid-column:1/-1}}@media(max-width:720px){.arcade-catalog{padding-top:36px}.arcade-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.arcade-card-body{padding:9px}.arcade-card h2{font-size:14px}.arcade-toolbar{grid-template-columns:1fr}.arcade-toolbar input{grid-column:auto}.arcade-intro h1{font-size:42px}}@media(max-width:360px){.arcade-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="./"><img src="./left4rcade_fc.png" alt="Left4RCade FightClub"></a>
+<nav><a href="./">Home</a><a href="./games.html">Games</a><a class="active" href="./arcade.html">Arcade Catalog</a><a href="./requests.html">Game Requests</a><a href="./pricing.html">Pricing Poll</a><a class="nav-cta" href="https://github.com/left4rcade/left4rcade">GitHub</a></nav>
+</div></header>
+<main class="container arcade-catalog">
+<section class="arcade-intro">
+<span class="eyebrow">FIGHTCADE 2 · ARCADE ROMS</span>
+<h1>Arcade catalogue.</h1>
+<p>Browse the ROM list, including regional versions and clones. Vote Up or Down for each ROM. Your vote can be changed or withdrawn at any time.</p>
+</section>
+<div class="arcade-toolbar">
+<input class="arcade-control" id="arcade-search" type="search" placeholder="Search title, ROM ID, parent or manufacturer…" autocomplete="off" aria-label="Search arcade ROMs">
+<select class="arcade-control" id="arcade-sort" aria-label="Sort games">
+<option value="title">Title A–Z</option><option value="score-desc">Highest score</option><option value="score-asc">Lowest score</option><option value="votes-desc">Most votes</option><option value="down-desc">Most Down votes</option><option value="year-desc">Newest year</option><option value="unplayed">Unplayed first</option>
+</select>
+<select class="arcade-control" id="arcade-kind" aria-label="Filter main games or clones">
+<option value="all">Main games and clones</option><option value="main">Main games only</option><option value="clone">Clones only</option>
+</select>
+</div>
+<div class="arcade-filters" id="arcade-vote-filters" role="group" aria-label="Filter by vote status">
+<button class="arcade-chip" type="button" data-vote-filter="all" aria-pressed="true">All ROMs</button>
+<button class="arcade-chip" type="button" data-vote-filter="unplayed" aria-pressed="false">Unplayed</button>
+<button class="arcade-chip" type="button" data-vote-filter="played" aria-pressed="false">Played</button>
+<button class="arcade-chip" type="button" data-vote-filter="positive" aria-pressed="false">Positive score</button>
+<button class="arcade-chip" type="button" data-vote-filter="negative" aria-pressed="false">Negative score</button>
+<button class="arcade-chip" type="button" data-vote-filter="tied" aria-pressed="false">Tied</button>
+</div>
+<div class="arcade-meta-filters">
+<label class="arcade-note"><input id="arcade-metadata-missing" type="checkbox"> Metadata missing only</label>
+<label class="arcade-note"><input id="arcade-parent-only" type="checkbox"> Only show clones with a parent</label>
+</div>
+<p class="arcade-status" id="arcade-status" role="status" aria-live="polite">Loading ROM catalogue…</p>
+<section class="arcade-grid" id="arcade-grid" aria-label="Arcade ROMs"></section>
+<div class="arcade-empty" id="arcade-empty" hidden>No ROMs match these filters.</div>
+<div class="arcade-pagination" id="arcade-pagination" hidden>
+<button class="button secondary" id="arcade-prev" type="button">← Previous</button>
+<span class="arcade-note" id="arcade-page-label"></span>
+<button class="button secondary" id="arcade-next" type="button">Next →</button>
+</div>
+<p class="arcade-note" style="margin-top:24px">Votes use a hashed identifier derived from your network address and browser information to limit duplicate voting. This is not account-based identity.</p>
+</main>
+<footer><div class="container footer"><span>© Left4RCade</span><span>Classic arcade fighters. Modern netplay.</span></div></footer>
+<script>
+(() => {
+  "use strict";
+  const API = "https://left4rcade-api.l-mehmet-hilmi-l.workers.dev";
+  const PAGE_SIZE = 48;
+  const IMAGE_BASE = "https://data.spludlow.co.uk/mame/machine/";
+  const el = id => document.getElementById(id);
+  const searchInput = el("arcade-search");
+  const sortSelect = el("arcade-sort");
+  const kindSelect = el("arcade-kind");
+  const grid = el("arcade-grid");
+  const status = el("arcade-status");
+  const empty = el("arcade-empty");
+  const pagination = el("arcade-pagination");
+  const pageLabel = el("arcade-page-label");
+  const prevButton = el("arcade-prev");
+  const nextButton = el("arcade-next");
+  let catalogue = [];
+  let voteMap = new Map();
+  let voteFilter = "all";
+  let page = 1;
+  let searchTimer;
+
+  const clean = value => String(value ?? "").trim();
+  const romId = game => clean(game.id);
+  const scoreFor = vote => vote.up - vote.down;
+  const votesFor = id => voteMap.get(id) || { up: 0, down: 0, mine: 0 };
+  const isClone = game => Boolean(game.isClone || game.cloneOf || game.romOf);
+  const parentId = game => clean(game.cloneOf || game.romOf);
+  function setStatus(text, isError = false) {
+    status.textContent = text;
+    status.classList.toggle("arcade-error", isError);
+  }
+  function imageUrl(id) { return IMAGE_BASE + encodeURIComponent(id) + ".png"; }
+
+  async function loadVotes() {
+    const response = await fetch(API + "/api/arcade-votes", {
+      headers: { Accept: "application/json" }, cache: "no-store"
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || "Could not load votes.");
+    const rows = Array.isArray(data.votes) ? data.votes : [];
+    voteMap = new Map(rows.map(row => [String(row.rom_id), {
+      up: Number(row.up_votes) || 0,
+      down: Number(row.down_votes) || 0,
+      mine: Number(row.my_vote) || 0
+    }]));
+  }
+
+  function makeCard(game) {
+    const id = romId(game);
+    const votes = votesFor(id);
+    const score = scoreFor(votes);
+    const card = document.createElement("article");
+    card.className = "arcade-card";
+    const art = document.createElement("div");
+    art.className = "arcade-card-art";
+    const img = document.createElement("img");
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.alt = clean(game.title) + " (" + id + ") arcade screenshot";
+    img.src = imageUrl(id);
+    img.dataset.romId = id;
+    img.dataset.parentId = parentId(game);
+    img.dataset.fallbackUsed = "false";
+    img.addEventListener("error", () => {
+      if (img.dataset.fallbackUsed === "false" && img.dataset.parentId && img.dataset.parentId !== img.dataset.romId) {
+        img.dataset.fallbackUsed = "true";
+        img.src = imageUrl(img.dataset.parentId);
+        return;
+      }
+      img.onerror = null;
+      img.style.visibility = "hidden";
+      art.setAttribute("aria-label", "No screenshot available for " + id);
+    });
+    art.appendChild(img);
+
+    const body = document.createElement("div");
+    body.className = "arcade-card-body";
+    const rom = document.createElement("span");
+    rom.className = "arcade-rom";
+    rom.textContent = id + (isClone(game) ? " · CLONE" : " · MAIN");
+    const title = document.createElement("h2");
+    title.textContent = clean(game.title) || id;
+    const details = document.createElement("p");
+    details.className = "arcade-details";
+    const detailParts = [];
+    if (game.year) detailParts.push(String(game.year));
+    if (game.manufacturer) detailParts.push(clean(game.manufacturer));
+    if (game.parentTitle) detailParts.push("Parent: " + clean(game.parentTitle));
+    details.textContent = detailParts.join(" · ") || "Arcade ROM";
+    const scoreRow = document.createElement("div");
+    scoreRow.className = "arcade-score";
+    const scoreLabel = document.createElement("strong");
+    scoreLabel.textContent = (score > 0 ? "+" : "") + score;
+    const countLabel = document.createElement("span");
+    countLabel.textContent = votes.up + " Up · " + votes.down + " Down";
+    scoreRow.append(scoreLabel, countLabel);
+
+    const actions = document.createElement("div");
+    actions.className = "arcade-vote-row";
+    for (const [direction, value, label] of [["up", 1, "▲ Up"], ["down", -1, "▼ Down"]]) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "arcade-vote";
+      button.textContent = label;
+      button.setAttribute("aria-pressed", String(votes.mine === value));
+      button.setAttribute("aria-label", label + " vote for " + (clean(game.title) || id));
+      button.disabled = !window.arcadeVotingAvailable || Boolean(window.arcadeVoteBusy);
+      button.addEventListener("click", () => castVote(id, direction, button));
+      actions.appendChild(button);
+    }
+    body.append(rom, title, details, scoreRow, actions);
+    card.append(art, body);
+    return card;
+  }
+
+  function matches(game) {
+    const id = romId(game);
+    const vote = votesFor(id);
+    const score = scoreFor(vote);
+    const total = vote.up + vote.down;
+    const term = clean(searchInput.value).toLocaleLowerCase();
+    const haystack = [id, game.title, game.parentTitle, game.manufacturer, game.year].map(clean).join(" ").toLocaleLowerCase();
+    if (term && !haystack.includes(term)) return false;
+    if (kindSelect.value === "main" && isClone(game)) return false;
+    if (kindSelect.value === "clone" && !isClone(game)) return false;
+    if (voteFilter === "unplayed" && total !== 0) return false;
+    if (voteFilter === "played" && total === 0) return false;
+    if (voteFilter === "positive" && score <= 0) return false;
+    if (voteFilter === "negative" && score >= 0) return false;
+    if (voteFilter === "tied" && (total === 0 || score !== 0)) return false;
+    if (el("arcade-metadata-missing").checked && game.metadataMatched !== false) return false;
+    if (el("arcade-parent-only").checked && (!isClone(game) || !parentId(game))) return false;
+    return true;
+  }
+
+  function sortGames(items) {
+    const mode = sortSelect.value;
+    return items.sort((a, b) => {
+      const av = votesFor(romId(a)), bv = votesFor(romId(b));
+      if (mode === "score-desc") return scoreFor(bv) - scoreFor(av) || clean(a.title).localeCompare(clean(b.title));
+      if (mode === "score-asc") return scoreFor(av) - scoreFor(bv) || clean(a.title).localeCompare(clean(b.title));
+      if (mode === "votes-desc") return (bv.up + bv.down) - (av.up + av.down) || clean(a.title).localeCompare(clean(b.title));
+      if (mode === "down-desc") return bv.down - av.down || clean(a.title).localeCompare(clean(b.title));
+      if (mode === "year-desc") return (Number(b.year) || 0) - (Number(a.year) || 0) || clean(a.title).localeCompare(clean(b.title));
+      if (mode === "unplayed") return (av.up + av.down) - (bv.up + bv.down) || clean(a.title).localeCompare(clean(b.title));
+      return clean(a.title).localeCompare(clean(b.title), undefined, { sensitivity: "base" }) || romId(a).localeCompare(romId(b));
+    });
+  }
+
+  function render() {
+    const filtered = sortGames(catalogue.filter(matches));
+    const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+    page = Math.min(Math.max(1, page), pageCount);
+    const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+    const fragment = document.createDocumentFragment();
+    for (const game of visible) fragment.appendChild(makeCard(game));
+    grid.replaceChildren(fragment);
+    empty.hidden = filtered.length !== 0;
+    pagination.hidden = filtered.length <= PAGE_SIZE;
+    prevButton.disabled = page <= 1;
+    nextButton.disabled = page >= pageCount;
+    pageLabel.textContent = "Page " + page + " of " + pageCount;
+    setStatus(filtered.length.toLocaleString() + " ROMs · showing " +
+      (filtered.length ? ((page - 1) * PAGE_SIZE + 1) + "–" + Math.min(page * PAGE_SIZE, filtered.length) : "0") +
+      " · " + (voteMap.size ? "vote totals loaded" : "no votes recorded yet"));
+  }
+
+  async function castVote(id, direction, button) {
+    if (!window.arcadeVotingAvailable) {
+      setStatus("Voting is not available until the arcade voting API is deployed.", true);
+      return;
+    }
+    if (window.arcadeVoteBusy) return;
+    window.arcadeVoteBusy = true;
+    const oldText = button.textContent;
+    button.disabled = true;
+    button.textContent = "Saving…";
+    try {
+      const response = await fetch(API + "/api/arcade/" + encodeURIComponent(id) + "/vote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ direction })
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not save vote.");
+      await loadVotes();
+      render();
+    } catch (error) {
+      setStatus(error.message || "Could not save vote. Please try again.", true);
+      button.textContent = oldText;
+      button.disabled = false;
+    } finally {
+      window.arcadeVoteBusy = false;
+    }
+  }
+
+  document.querySelectorAll("[data-vote-filter]").forEach(button => {
+    button.addEventListener("click", () => {
+      voteFilter = button.dataset.voteFilter;
+      document.querySelectorAll("[data-vote-filter]").forEach(item => {
+        item.setAttribute("aria-pressed", String(item === button));
+      });
+      page = 1;
+      render();
+    });
+  });
+  searchInput.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => { page = 1; render(); }, 120);
+  });
+  [sortSelect, kindSelect, el("arcade-metadata-missing"), el("arcade-parent-only")].forEach(control => {
+    control.addEventListener("change", () => { page = 1; render(); });
+  });
+  prevButton.addEventListener("click", () => { page--; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+  nextButton.addEventListener("click", () => { page++; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  async function init() {
+    try {
+      const response = await fetch("./arcade-games.json", { cache: "force-cache" });
+      if (!response.ok) throw new Error("Catalogue returned HTTP " + response.status);
+      const data = await response.json();
+      catalogue = Array.isArray(data) ? data : Array.isArray(data.games) ? data.games : [];
+      if (!catalogue.length) throw new Error("Catalogue is empty or has an unexpected format.");
+    } catch (error) {
+      setStatus("Could not load arcade-games.json. Please refresh and try again.", true);
+      return;
+    }
+    try {
+      await loadVotes();
+      window.arcadeVotingAvailable = true;
+    } catch {
+      window.arcadeVotingAvailable = false;
+      setStatus("Catalogue loaded. Voting API is not deployed yet; browsing and filters still work.", true);
+    }
+    render();
+  }
+  window.arcadeVotingAvailable = false;
+  window.arcadeVoteBusy = false;
+  init();
+})();
+</script>
+</body>
+</html>
