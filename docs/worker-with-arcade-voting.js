@@ -365,7 +365,7 @@ export default {
         }
 
         const allowed = await checkRateLimit(
-          request, env, "arcade-vote", 15
+          request, env, `arcade-vote:${romId}`, 15
         );
 
         if (!allowed) {
