@@ -2,6 +2,8 @@
 
 The website's `arcade.html` uses two routes on the existing Worker. The Worker source is managed in the Cloudflare dashboard and is not present in the inspected GitHub repositories, so these changes must be added to that Worker before voting can be enabled.
 
+A complete copy of the supplied existing Worker with the arcade-voting changes already integrated is available in [`worker-with-arcade-voting.js`](./worker-with-arcade-voting.js). Review it against the current deployed Worker before replacing anything. The snippets below explain the changes individually.
+
 ## Cloudflare dashboard checklist
 
 Do this only after reviewing the website PR. Keep the existing Worker and D1 database; do not create a replacement.
