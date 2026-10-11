@@ -75,6 +75,7 @@
   let voteFilter = "all";
   let page = 1;
   let searchTimer;
+  const busyRomIds = new Set();
 
   const clean = value => String(value ?? "").trim();
   const romId = game => clean(game.id);
@@ -161,7 +162,7 @@
       button.textContent = label;
       button.setAttribute("aria-pressed", String(votes.mine === value));
       button.setAttribute("aria-label", label + " vote for " + (clean(game.title) || id));
-      button.disabled = !window.arcadeVotingAvailable || Boolean(window.arcadeVoteBusy);
+      button.disabled = !window.arcadeVotingAvailable || busyRomIds.has(id);
       button.addEventListener("click", () => castVote(id, direction, button));
       actions.appendChild(button);
     }
@@ -227,11 +228,11 @@
       setStatus("Voting is not available until the arcade voting API is deployed.", true);
       return;
     }
-    if (window.arcadeVoteBusy) return;
-    window.arcadeVoteBusy = true;
-    const oldText = button.textContent;
+    if (busyRomIds.has(id)) return;
+    busyRomIds.add(id);
     button.disabled = true;
     button.textContent = "Saving…";
+    let errorMessage = "";
     try {
       const response = await fetch(API + "/api/arcade/" + encodeURIComponent(id) + "/vote", {
         method: "POST",
@@ -241,13 +242,12 @@
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || "Could not save vote.");
       await loadVotes();
-      render();
     } catch (error) {
-      setStatus(error.message || "Could not save vote. Please try again.", true);
-      button.textContent = oldText;
-      button.disabled = false;
+      errorMessage = error.message || "Could not save vote. Please try again.";
     } finally {
-      window.arcadeVoteBusy = false;
+      busyRomIds.delete(id);
+      render();
+      if (errorMessage) setStatus(errorMessage, true);
     }
   }
 
@@ -292,7 +292,6 @@
     render();
   }
   window.arcadeVotingAvailable = false;
-  window.arcadeVoteBusy = false;
   init();
 })();
 </script>
