@@ -1,0 +1,4623 @@
+{
+  "schemaVersion": 1,
+  "source": "Curated list parsed from the supplied Markdown",
+  "categories": [
+    {
+      "id": "beat-em-up",
+      "name": "Beat ’Em Up & Co-op",
+      "sort_order": 1
+    },
+    {
+      "id": "run-n-gun",
+      "name": "Run ’n Gun & Action",
+      "sort_order": 2
+    },
+    {
+      "id": "fighting",
+      "name": "Dövüş Oyunları",
+      "sort_order": 3
+    },
+    {
+      "id": "shoot-em-up",
+      "name": "Shoot ’Em Up",
+      "sort_order": 4
+    },
+    {
+      "id": "puzzle",
+      "name": "Puzzle & Eğlence",
+      "sort_order": 5
+    },
+    {
+      "id": "sports-racing",
+      "name": "Spor & Yarış",
+      "sort_order": 6
+    },
+    {
+      "id": "igs",
+      "name": "IGS (Kore / Asya Salonları)",
+      "sort_order": 7
+    }
+  ],
+  "games": [
+    {
+      "id": "baddudes",
+      "title": "Bad Dudes vs. Dragonninja (US, revision 1)",
+      "year": "1988",
+      "manufacturer": "Data East USA",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_dec0.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "cninja",
+      "title": "Caveman Ninja (World ver 4)",
+      "year": "1991",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_cninja.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "ddragon",
+      "title": "Double Dragon (World set 1)",
+      "year": "1987",
+      "manufacturer": "Technos Japan (Taito license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_ddragon.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "ddragon2",
+      "title": "Double Dragon II: The Revenge (World)",
+      "year": "1988",
+      "manufacturer": "Technos Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_ddragon.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "ddragon3",
+      "title": "Double Dragon 3: The Rosetta Stone (US)",
+      "year": "1990",
+      "manufacturer": "East Technology / Technos Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_ddragon3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "dino",
+      "title": "Cadillacs and Dinosaurs (World 930201)",
+      "year": "1993",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "simpsons",
+      "title": "The Simpsons (4 Players World, set 1)",
+      "year": "1991",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_simpsons.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "tmnt",
+      "title": "Teenage Mutant Ninja Turtles (World 4 Players, version X)",
+      "year": "1989",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_tmnt.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "tmnt2",
+      "title": "Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)",
+      "year": "1991",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_tmnt.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "ssriders",
+      "title": "Sunset Riders (4 Players ver EAC)",
+      "year": "1991",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_tmnt.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "xmen",
+      "title": "X-Men (4 Players ver EBA)",
+      "year": "1992",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_xmen.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "xmen6p",
+      "title": "X-Men (6 Players ver ECB)",
+      "year": "1992",
+      "manufacturer": "Konami",
+      "cloneOf": "xmen",
+      "romOf": "xmen",
+      "parentTitle": "X-Men (4 Players ver EBA)",
+      "sourceFile": "konami/d_xmen.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "captcomm",
+      "title": "Captain Commando (World 911202)",
+      "year": "1991",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "knights",
+      "title": "Knights of the Round (World 911127)",
+      "year": "1991",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "kod",
+      "title": "The King of Dragons (World 910805)",
+      "year": "1991",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "goldnaxe",
+      "title": "Golden Axe (set 6, US) (8751 317-123A)",
+      "year": "1989",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16b.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "avsp",
+      "title": "Alien vs. Predator (Europe 940520)",
+      "year": "1994",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "punisher",
+      "title": "The Punisher (World 930422)",
+      "year": "1993",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "nbbatman",
+      "title": "Ninja Baseball Bat Man (World)",
+      "year": "1993",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "vendetta",
+      "title": "Vendetta (World, 4 Players, ver. T)",
+      "year": "1991",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_vendetta.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "viostorm",
+      "title": "Violent Storm (ver EAC)",
+      "year": "1993",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_mystwarr.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "ddcrew",
+      "title": "D. D. Crew (World, 3 Players) (FD1094 317-0190)",
+      "year": "1991",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys18.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "growl",
+      "title": "Growl (World, Rev 1)",
+      "year": "1990",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "uccops",
+      "title": "Undercover Cops (World)",
+      "year": "1992",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 24
+        }
+      ]
+    },
+    {
+      "id": "riotcity",
+      "title": "Riot City (Japan)",
+      "year": "1991",
+      "manufacturer": "Sega / Westone",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16b.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 25
+        }
+      ]
+    },
+    {
+      "id": "willow",
+      "title": "Willow (World)",
+      "year": "1989",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 26
+        }
+      ]
+    },
+    {
+      "id": "mercs",
+      "title": "Mercs (World 900302)",
+      "year": "1990",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 27
+        }
+      ]
+    },
+    {
+      "id": "commando",
+      "title": "Commando (World)",
+      "year": "1985",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_commando.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 28
+        }
+      ]
+    },
+    {
+      "id": "shinobi",
+      "title": "Shinobi (set 6, System 16A) (unprotected)",
+      "year": "1987",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16a.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 29
+        }
+      ]
+    },
+    {
+      "id": "altbeast",
+      "title": "Altered Beast (set 8) (8751 317-0078)",
+      "year": "1988",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16b.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 30
+        }
+      ]
+    },
+    {
+      "id": "aliensyn",
+      "title": "Alien Syndrome (set 4, System 16B, unprotected)",
+      "year": "1987",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16b.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 31
+        }
+      ]
+    },
+    {
+      "id": "quartet",
+      "title": "Quartet (Rev A, 8751 315-5194)",
+      "year": "1986",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16a.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 32
+        }
+      ]
+    },
+    {
+      "id": "cadash",
+      "title": "Cadash (World)",
+      "year": "1989",
+      "manufacturer": "Taito",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_asuka.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 33
+        }
+      ]
+    },
+    {
+      "id": "gauntlet",
+      "title": "Gauntlet (rev 14)",
+      "year": "1985",
+      "manufacturer": "Atari Games",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "atari/d_gauntlet.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 34
+        }
+      ]
+    },
+    {
+      "id": "mwalk",
+      "title": "Michael Jackson's Moonwalker (World) (FD1094/8751 317-0159)",
+      "year": "1990",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys18.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 35
+        }
+      ]
+    },
+    {
+      "id": "hharry",
+      "title": "Hammerin' Harry (World, M81 hardware)",
+      "year": "1990",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m72.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 36
+        }
+      ]
+    },
+    {
+      "id": "wwfwfest",
+      "title": "WWF WrestleFest (World)",
+      "year": "1991",
+      "manufacturer": "Technos Japan (Tecmo license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_wwfwfest.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 37
+        }
+      ]
+    },
+    {
+      "id": "smashtv",
+      "title": "Smash T.V. (rev 8.00)",
+      "year": "1990",
+      "manufacturer": "Williams",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_yunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 38
+        }
+      ]
+    },
+    {
+      "id": "spyhunt",
+      "title": "Spy Hunter",
+      "year": "1983",
+      "manufacturer": "Bally Midway",
+      "cloneOf": null,
+      "romOf": "midssio",
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_mcr3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 39
+        }
+      ]
+    },
+    {
+      "id": "opwolf",
+      "title": "Operation Wolf (World, rev 2, set 1)",
+      "year": "1987",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": "cchip",
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitomisc.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 40
+        }
+      ]
+    },
+    {
+      "id": "opwolf3",
+      "title": "Operation Wolf 3 (World)",
+      "year": "1994",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_slapshot.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 41
+        }
+      ]
+    },
+    {
+      "id": "term2",
+      "title": "Terminator 2 - Judgment Day (rev LA4 08/03/92)",
+      "year": "1991",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_yunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 42
+        }
+      ]
+    },
+    {
+      "id": "totcarn",
+      "title": "Total Carnage (rev LA1 03/10/92)",
+      "year": "1992",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_yunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 43
+        }
+      ]
+    },
+    {
+      "id": "robocop",
+      "title": "Robocop (World, revision 4)",
+      "year": "1988",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_dec0.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 44
+        }
+      ]
+    },
+    {
+      "id": "robocop2",
+      "title": "Robocop 2 (Euro/Asia v0.10)",
+      "year": "1991",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_cninja.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 45
+        }
+      ]
+    },
+    {
+      "id": "splatter",
+      "title": "Splatterhouse (World, new version (SH3))",
+      "year": "1988",
+      "manufacturer": "Namco",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_namcos1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 46
+        }
+      ]
+    },
+    {
+      "id": "midres",
+      "title": "Midnight Resistance (World, set 1)",
+      "year": "1989",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_dec0.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 47
+        }
+      ]
+    },
+    {
+      "id": "karnov",
+      "title": "Karnov (US, rev 6)",
+      "year": "1987",
+      "manufacturer": "Data East USA",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_karnov.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 48
+        }
+      ]
+    },
+    {
+      "id": "rygar",
+      "title": "Rygar (US set 1)",
+      "year": "1986",
+      "manufacturer": "Tecmo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_tecmo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 49
+        }
+      ]
+    },
+    {
+      "id": "strider",
+      "title": "Strider (USA, B-Board 89624B-2)",
+      "year": "1989",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 50
+        }
+      ]
+    },
+    {
+      "id": "unsquad",
+      "title": "U.N. Squadron (USA)",
+      "year": "1989",
+      "manufacturer": "Daipro (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 51
+        }
+      ]
+    },
+    {
+      "id": "ghouls",
+      "title": "Ghouls'n Ghosts (World)",
+      "year": "1988",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "beat-em-up",
+          "name": "Beat ’Em Up & Co-op",
+          "order": 52
+        }
+      ]
+    },
+    {
+      "id": "mslug",
+      "title": "Metal Slug - Super Vehicle-001",
+      "year": "1996",
+      "manufacturer": "Nazca",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "mslug2",
+      "title": "Metal Slug 2 - Super Vehicle-001/II (NGM-2410 ~ NGH-2410)",
+      "year": "1998",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "mslugx",
+      "title": "Metal Slug X - Super Vehicle-001 (NGM-2500 ~ NGH-2500)",
+      "year": "1999",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "mslug3",
+      "title": "Metal Slug 3 (NGM-2560)",
+      "year": "2000",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "mslug4",
+      "title": "Metal Slug 4 (NGM-2630)",
+      "year": "2002",
+      "manufacturer": "Mega / Noise Factory / Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "mslug5",
+      "title": "Metal Slug 5 (NGM-2680)",
+      "year": "2003",
+      "manufacturer": "SNK Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "contra",
+      "title": "Contra (US / Asia, set 1)",
+      "year": "1987",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_contra.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "gryzor",
+      "title": "Gryzor (set 1)",
+      "year": "1987",
+      "manufacturer": "Konami",
+      "cloneOf": "contra",
+      "romOf": "contra",
+      "parentTitle": "Contra (US / Asia, set 1)",
+      "sourceFile": "konami/d_contra.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "shocktro",
+      "title": "Shock Troopers (set 1)",
+      "year": "1997",
+      "manufacturer": "Saurus",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "shocktr2",
+      "title": "Shock Troopers - 2nd Squad",
+      "year": "1998",
+      "manufacturer": "Saurus",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "gunforce",
+      "title": "Gunforce - Battle Fire Engulfed Terror Island (World)",
+      "year": "1991",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "gunforc2",
+      "title": "Gun Force II (US)",
+      "year": "1994",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "cybots",
+      "title": "Cyberbots: Fullmetal Madness (Europe 950424)",
+      "year": "1995",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "run-n-gun",
+          "name": "Run ’n Gun & Action",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "sf2",
+      "title": "Street Fighter II: The World Warrior (World 910522)",
+      "year": "1991",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "sf2ce",
+      "title": "Street Fighter II': Champion Edition (World 920513)",
+      "year": "1992",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "sf2hf",
+      "title": "Street Fighter II': Hyper Fighting (World 921209)",
+      "year": "1992",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "ssf2",
+      "title": "Super Street Fighter II: The New Challengers (World 931005)",
+      "year": "1993",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "ssf2t",
+      "title": "Super Street Fighter II Turbo (World 940223)",
+      "year": "1994",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "sfiii",
+      "title": "Street Fighter III: New Generation (Europe 970204)",
+      "year": "1997",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "sfiii2",
+      "title": "Street Fighter III 2nd Impact: Giant Attack (USA 970930)",
+      "year": "1997",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "sfiii3nr1",
+      "title": "Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)",
+      "year": "1999",
+      "manufacturer": "Capcom",
+      "cloneOf": "sfiii3",
+      "romOf": "sfiii3",
+      "parentTitle": "Street Fighter III 3rd Strike: Fight for the Future (Europe 990608)",
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "sfa",
+      "title": "Street Fighter Alpha: Warriors' Dreams (Europe 950727)",
+      "year": "1995",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "sfa2",
+      "title": "Street Fighter Alpha 2 (Europe 960229)",
+      "year": "1996",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "sfa3",
+      "title": "Street Fighter Alpha 3 (Europe 980904)",
+      "year": "1998",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "vsav",
+      "title": "Vampire Savior: The Lord of Vampire (Europe 970519)",
+      "year": "1997",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "nwarr",
+      "title": "Night Warriors: Darkstalkers' Revenge (Europe 950316)",
+      "year": "1995",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "vhunt2",
+      "title": "Vampire Hunter 2: Darkstalkers Revenge (Japan 970929)",
+      "year": "1997",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "redearth",
+      "title": "Red Earth (Europe 961121)",
+      "year": "1996",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "jojo",
+      "title": "JoJo's Venture (Europe 990128)",
+      "year": "1998",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "jojoban",
+      "title": "JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 991015, NO CD)",
+      "year": "1999",
+      "manufacturer": "Capcom",
+      "cloneOf": "jojoba",
+      "romOf": "jojoba",
+      "parentTitle": "JoJo's Bizarre Adventure (Europe 991015, NO CD)",
+      "sourceFile": "cps3/d_cps3.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "kof94",
+      "title": "The King of Fighters '94 (NGM-055 ~ NGH-055)",
+      "year": "1994",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "kof95",
+      "title": "The King of Fighters '95 (NGM-084)",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "kof96",
+      "title": "The King of Fighters '96 (NGM-214)",
+      "year": "1996",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "kof97",
+      "title": "The King of Fighters '97 (NGM-2320)",
+      "year": "1997",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "kof98",
+      "title": "The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (NGM-2420)",
+      "year": "1998",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "kof99",
+      "title": "The King of Fighters '99 - Millennium Battle (NGM-2510)",
+      "year": "1999",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "kof2000",
+      "title": "The King of Fighters 2000 (NGM-2570 ~ NGH-2570)",
+      "year": "2000",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 24
+        }
+      ]
+    },
+    {
+      "id": "kof2001",
+      "title": "The King of Fighters 2001 (NGM-262?)",
+      "year": "2001",
+      "manufacturer": "Eolith / SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 25
+        }
+      ]
+    },
+    {
+      "id": "kof2002",
+      "title": "The King of Fighters 2002 (NGM-2650 ~ NGH-2650)",
+      "year": "2002",
+      "manufacturer": "Eolith / Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 26
+        }
+      ]
+    },
+    {
+      "id": "kof2003",
+      "title": "The King of Fighters 2003 (NGM-2710, Export)",
+      "year": "2003",
+      "manufacturer": "SNK Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 27
+        }
+      ]
+    },
+    {
+      "id": "samsho",
+      "title": "Samurai Shodown / Samurai Spirits (NGM-045)",
+      "year": "1993",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 28
+        }
+      ]
+    },
+    {
+      "id": "samsho2",
+      "title": "Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063)",
+      "year": "1994",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 29
+        }
+      ]
+    },
+    {
+      "id": "samsho3",
+      "title": "Samurai Shodown III / Samurai Spirits - Zankurou Musouken (NGM-087)",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 30
+        }
+      ]
+    },
+    {
+      "id": "samsho4",
+      "title": "Samurai Shodown IV - Amakusa's Revenge / Samurai Spirits - Amakusa Kourin (NGM-222 ~ NGH-222)",
+      "year": "1996",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 31
+        }
+      ]
+    },
+    {
+      "id": "samsho5",
+      "title": "Samurai Shodown V / Samurai Spirits Zero (NGM-2700, set 1)",
+      "year": "2003",
+      "manufacturer": "Yuki Enterprise / SNK Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 32
+        }
+      ]
+    },
+    {
+      "id": "samsh5sp",
+      "title": "Samurai Shodown V Special / Samurai Spirits Zero Special (NGM-2720)",
+      "year": "2004",
+      "manufacturer": "Yuki Enterprise / SNK Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 33
+        }
+      ]
+    },
+    {
+      "id": "fatfury1",
+      "title": "Fatal Fury - King of Fighters / Garou Densetsu - Shukumei no Tatakai (NGM-033 ~ NGH-033)",
+      "year": "1991",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 34
+        }
+      ]
+    },
+    {
+      "id": "fatfury2",
+      "title": "Fatal Fury 2 / Garou Densetsu 2 - Arata-naru Tatakai (NGM-047 ~ NGH-047)",
+      "year": "1992",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 35
+        }
+      ]
+    },
+    {
+      "id": "fatfury3",
+      "title": "Fatal Fury 3 - Road to the Final Victory / Garou Densetsu 3 - Haruka-naru Tatakai (NGM-069 ~ NGH-069)",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 36
+        }
+      ]
+    },
+    {
+      "id": "rbff1",
+      "title": "Real Bout Fatal Fury / Real Bout Garou Densetsu (NGM-095 ~ NGH-095)",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 37
+        }
+      ]
+    },
+    {
+      "id": "rbffspec",
+      "title": "Real Bout Fatal Fury Special / Real Bout Garou Densetsu Special",
+      "year": "1996",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 38
+        }
+      ]
+    },
+    {
+      "id": "rbff2",
+      "title": "Real Bout Fatal Fury 2 - The Newcomers / Real Bout Garou Densetsu 2 - The Newcomers (NGM-2400)",
+      "year": "1998",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 39
+        }
+      ]
+    },
+    {
+      "id": "garou",
+      "title": "Garou - Mark of the Wolves (NGM-2530)",
+      "year": "1999",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 40
+        }
+      ]
+    },
+    {
+      "id": "aof",
+      "title": "Art of Fighting / Ryuuko no Ken (NGM-044 ~ NGH-044)",
+      "year": "1992",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 41
+        }
+      ]
+    },
+    {
+      "id": "aof2",
+      "title": "Art of Fighting 2 / Ryuuko no Ken 2 (NGM-056)",
+      "year": "1994",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 42
+        }
+      ]
+    },
+    {
+      "id": "aof3",
+      "title": "Art of Fighting 3 - The Path of the Warrior / Art of Fighting - Ryuuko no Ken Gaiden",
+      "year": "1996",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 43
+        }
+      ]
+    },
+    {
+      "id": "wh1",
+      "title": "World Heroes (ALM-005)",
+      "year": "1992",
+      "manufacturer": "Alpha Denshi Co.",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 44
+        }
+      ]
+    },
+    {
+      "id": "wh2",
+      "title": "World Heroes 2 (ALM-006 ~ ALH-006)",
+      "year": "1993",
+      "manufacturer": "ADK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 45
+        }
+      ]
+    },
+    {
+      "id": "whp",
+      "title": "World Heroes Perfect",
+      "year": "1995",
+      "manufacturer": "ADK / SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 46
+        }
+      ]
+    },
+    {
+      "id": "lastblad",
+      "title": "The Last Blade / Bakumatsu Roman - Gekka no Kenshi (NGM-2340)",
+      "year": "1997",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 47
+        }
+      ]
+    },
+    {
+      "id": "lastbld2",
+      "title": "The Last Blade 2 / Bakumatsu Roman - Dai Ni Maku Gekka no Kenshi (NGM-2430 ~ NGH-2430)",
+      "year": "1998",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 48
+        }
+      ]
+    },
+    {
+      "id": "wakuwak7",
+      "title": "Waku Waku 7",
+      "year": "1996",
+      "manufacturer": "Sunsoft",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 49
+        }
+      ]
+    },
+    {
+      "id": "kabukikl",
+      "title": "Far East of Eden - Kabuki Klash / Tengai Makyou - Shin Den",
+      "year": "1995",
+      "manufacturer": "Hudson",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 50
+        }
+      ]
+    },
+    {
+      "id": "powerins",
+      "title": "Power Instinct (USA)",
+      "year": "1993",
+      "manufacturer": "Atlus",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_powerins.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 51
+        }
+      ]
+    },
+    {
+      "id": "pwrinst2",
+      "title": "Power Instinct 2 (US, Ver. 94.04.08, set 1)",
+      "year": "1994",
+      "manufacturer": "Atlus",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cave/d_pwrinst2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 52
+        }
+      ]
+    },
+    {
+      "id": "svc",
+      "title": "SNK vs. Capcom - SVC Chaos (NGM-2690 ~ NGH-2690)",
+      "year": "2003",
+      "manufacturer": "Playmore / Capcom",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 53
+        }
+      ]
+    },
+    {
+      "id": "matrim",
+      "title": "Matrimelee / Shin Gouketsuji Ichizoku Toukon (NGM-2660 ~ NGH-2660)",
+      "year": "2003",
+      "manufacturer": "Noise Factory / Atlus",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 54
+        }
+      ]
+    },
+    {
+      "id": "rotd",
+      "title": "Rage of the Dragons (NGM-2640?)",
+      "year": "2002",
+      "manufacturer": "Evoga / Playmore",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 55
+        }
+      ]
+    },
+    {
+      "id": "breakrev",
+      "title": "Breakers Revenge",
+      "year": "1998",
+      "manufacturer": "Visco",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 56
+        }
+      ]
+    },
+    {
+      "id": "savagere",
+      "title": "Savage Reign / Fu'un Mokushiroku - Kakutou Sousei",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 57
+        }
+      ]
+    },
+    {
+      "id": "kizuna",
+      "title": "Kizuna Encounter - Super Tag Battle / Fu'un Super Tag Battle",
+      "year": "1996",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 58
+        }
+      ]
+    },
+    {
+      "id": "ncombat",
+      "title": "Ninja Combat (NGM-009)",
+      "year": "1990",
+      "manufacturer": "Alpha Denshi Co.",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 59
+        }
+      ]
+    },
+    {
+      "id": "ncommand",
+      "title": "Ninja Commando",
+      "year": "1992",
+      "manufacturer": "Alpha Denshi Co.",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 60
+        }
+      ]
+    },
+    {
+      "id": "burningf",
+      "title": "Burning Fight (NGM-018 ~ NGH-018)",
+      "year": "1991",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 61
+        }
+      ]
+    },
+    {
+      "id": "sengoku",
+      "title": "Sengoku / Sengoku Denshou (NGM-017 ~ NGH-017)",
+      "year": "1991",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 62
+        }
+      ]
+    },
+    {
+      "id": "sengoku2",
+      "title": "Sengoku 2 / Sengoku Denshou 2",
+      "year": "1993",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 63
+        }
+      ]
+    },
+    {
+      "id": "mutnat",
+      "title": "Mutation Nation (NGM-014 ~ NGH-014)",
+      "year": "1992",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 64
+        }
+      ]
+    },
+    {
+      "id": "mk",
+      "title": "Mortal Kombat (rev 5.0 T-Unit 03/19/93)",
+      "year": "1992",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_tunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 65
+        }
+      ]
+    },
+    {
+      "id": "mk2",
+      "title": "Mortal Kombat II (rev L3.1)",
+      "year": "1993",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_tunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 66
+        }
+      ]
+    },
+    {
+      "id": "mk3",
+      "title": "Mortal Kombat 3 (rev 2.1)",
+      "year": "1994",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_wunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 67
+        }
+      ]
+    },
+    {
+      "id": "umk3",
+      "title": "Ultimate Mortal Kombat 3 (rev 1.2)",
+      "year": "1994",
+      "manufacturer": "Midway",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "midway/d_wunit.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 68
+        }
+      ]
+    },
+    {
+      "id": "asurabld",
+      "title": "Asura Blade - Sword of Dynasty (Japan)",
+      "year": "1998",
+      "manufacturer": "Fuuki",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_fuukifg3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 69
+        }
+      ]
+    },
+    {
+      "id": "killbld",
+      "title": "The Killing Blade / Ao Jian Kuang Dao (ver. 109, Chinese Board)",
+      "year": "1998",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 70
+        },
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "martmast",
+      "title": "Martial Masters / Xing Yi Quan (ver. 104, 102, 102US)",
+      "year": "2001",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 71
+        },
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "svg",
+      "title": "S.V.G. - Spectral vs Generation / Sheng Mo Shiji (M68k label V200) (ARM label V200, ROM 10/11/05 S.V.G V201)",
+      "year": "2005",
+      "manufacturer": "IGS / Idea Factory",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 72
+        },
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "daraku",
+      "title": "The Fallen Angels (World) / Daraku Tenshi: The Fallen Angels (Japan)",
+      "year": "1998",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 73
+        },
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "fghthist",
+      "title": "Fighter's History (World ver 43-09, DE-0395-1 PCB)",
+      "year": "1993",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_deco32.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 74
+        }
+      ]
+    },
+    {
+      "id": "ringdest",
+      "title": "Ring of Destruction: Slammasters II (Europe 940902)",
+      "year": "1994",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 75
+        }
+      ]
+    },
+    {
+      "id": "slammast",
+      "title": "Saturday Night Slam Masters (World 930713)",
+      "year": "1993",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 76
+        }
+      ]
+    },
+    {
+      "id": "mainevt",
+      "title": "The Main Event (4 Players ver. Y)",
+      "year": "1988",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_mainevt.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 77
+        }
+      ]
+    },
+    {
+      "id": "3countb",
+      "title": "3 Count Bout / Fire Suplex (NGM-043 ~ NGH-043)",
+      "year": "1993",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "fighting",
+          "name": "Dövüş Oyunları",
+          "order": 78
+        }
+      ]
+    },
+    {
+      "id": "s1945",
+      "title": "Strikers 1945 (World)",
+      "year": "1995",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "s1945ii",
+      "title": "Strikers 1945 II",
+      "year": "1997",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "s1945iii",
+      "title": "Strikers 1945 III (World) / Strikers 1999 (Japan)",
+      "year": "1999",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "1941",
+      "title": "1941: Counter Attack (World 900227)",
+      "year": "1990",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "1942",
+      "title": "1942 (Revision B)",
+      "year": "1984",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_1942.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "1943",
+      "title": "1943: The Battle of Midway (Euro)",
+      "year": "1987",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_1943.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "1944",
+      "title": "1944: The Loop Master (Europe 000620)",
+      "year": "2000",
+      "manufacturer": "Eighting / Raizing (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "19xx",
+      "title": "19XX: The War Against Destiny (Europe 960104)",
+      "year": "1996",
+      "manufacturer": "Capcom",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "ddonpach",
+      "title": "DoDonPachi (World, 1997 2/ 5 Master Ver.)",
+      "year": "1997",
+      "manufacturer": "Cave (Atlus license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cave/d_dodonpachi.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "ddp2",
+      "title": "DoDonPachi II - Bee Storm (World, ver. 102)",
+      "year": "2001",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "ddpdoj",
+      "title": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101)",
+      "year": "2002",
+      "manufacturer": "Cave (AMI license)",
+      "cloneOf": "ddp3",
+      "romOf": "ddp3",
+      "parentTitle": "DoDonPachi III (World, 2002.05.15 Master Ver)",
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "esprade",
+      "title": "ESP Ra.De. - A.D.2018 Tokyo (World, 1998 4/22 International Ver.)",
+      "year": "1998",
+      "manufacturer": "Cave (Atlus license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cave/d_esprade.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "guwange",
+      "title": "Guwange (Japan, 1999 6/24 Master Ver 16:55)",
+      "year": "1999",
+      "manufacturer": "Cave (Atlus license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "cave/d_guwange.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "gunbird",
+      "title": "Gunbird (World)",
+      "year": "1994",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "gunbird2",
+      "title": "Gunbird 2 (set 1)",
+      "year": "1998",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "tengai",
+      "title": "Tengai (World)",
+      "year": "1996",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "twincobr",
+      "title": "Twin Cobra (World)",
+      "year": "1987",
+      "manufacturer": "Toaplan / Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "toaplan/d_twincobr.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "rtype",
+      "title": "R-Type (World)",
+      "year": "1987",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m72.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "rtype2",
+      "title": "R-Type II (World)",
+      "year": "1989",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m72.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "rtypeleo",
+      "title": "R-Type Leo (World)",
+      "year": "1992",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "xmultipl",
+      "title": "X Multiply (World, M81 hardware)",
+      "year": "1989",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m72.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "imgfight",
+      "title": "Image Fight (World)",
+      "year": "1988",
+      "manufacturer": "Irem",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "irem/d_m72.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "gradius",
+      "title": "Gradius (Japan, ROM version)",
+      "year": "1985",
+      "manufacturer": "Konami",
+      "cloneOf": "nemesis",
+      "romOf": "nemesis",
+      "parentTitle": "Nemesis (ROM version)",
+      "sourceFile": "konami/d_nemesis.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "gradius2",
+      "title": "Gradius II: GOFER no Yabou (Japan, new)",
+      "year": "1988",
+      "manufacturer": "Konami",
+      "cloneOf": "vulcan",
+      "romOf": "vulcan",
+      "parentTitle": "Vulcan Venture (new)",
+      "sourceFile": "konami/d_twin16.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 24
+        }
+      ]
+    },
+    {
+      "id": "gradius3",
+      "title": "Gradius III (World, version R)",
+      "year": "1989",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_gradius3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 25
+        }
+      ]
+    },
+    {
+      "id": "xevious",
+      "title": "Xevious (Namco)",
+      "year": "1982",
+      "manufacturer": "Namco",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_galaga.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 26
+        }
+      ]
+    },
+    {
+      "id": "sxevious",
+      "title": "Super Xevious",
+      "year": "1984",
+      "manufacturer": "Namco",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_galaga.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 27
+        }
+      ]
+    },
+    {
+      "id": "darius",
+      "title": "Darius (World, rev 2)",
+      "year": "1986",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitomisc.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 28
+        }
+      ]
+    },
+    {
+      "id": "darius2",
+      "title": "Darius II (triple screen) (Japan, rev 1)",
+      "year": "1989",
+      "manufacturer": "Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_darius2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 29
+        }
+      ]
+    },
+    {
+      "id": "dariusg",
+      "title": "Darius Gaiden - Silver Hawk (Ver 2.5O 1994/09/19)",
+      "year": "1994",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 30
+        }
+      ]
+    },
+    {
+      "id": "dariusgx",
+      "title": "Darius Gaiden - Silver Hawk Extra Version (Ver 2.7J 1995/03/06) (Official Hack)",
+      "year": "1994",
+      "manufacturer": "Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 31
+        }
+      ]
+    },
+    {
+      "id": "raiden",
+      "title": "Raiden (World set 1)",
+      "year": "1990",
+      "manufacturer": "Seibu Kaihatsu",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_raiden.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 32
+        }
+      ]
+    },
+    {
+      "id": "raiden2",
+      "title": "Raiden II (US, set 1)",
+      "year": "1993",
+      "manufacturer": "Seibu Kaihatsu (Fabtek license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_raiden2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 33
+        }
+      ]
+    },
+    {
+      "id": "raidendx",
+      "title": "Raiden DX (UK)",
+      "year": "1994",
+      "manufacturer": "Seibu Kaihatsu",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_raiden2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 34
+        }
+      ]
+    },
+    {
+      "id": "bgaregga",
+      "title": "Battle Garegga (Europe / USA / Japan / Asia) (Sat Feb 3 1996)",
+      "year": "1996",
+      "manufacturer": "Raizing / Eighting",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "toaplan/d_battleg.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 35
+        }
+      ]
+    },
+    {
+      "id": "batsugun",
+      "title": "Batsugun",
+      "year": "1993",
+      "manufacturer": "Toaplan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "toaplan/d_batsugun.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 36
+        }
+      ]
+    },
+    {
+      "id": "mahoudai",
+      "title": "Mahou Daisakusen (Japan)",
+      "year": "1993",
+      "manufacturer": "Raizing (Able license)",
+      "cloneOf": "sstriker",
+      "romOf": "sstriker",
+      "parentTitle": "Sorcer Striker",
+      "sourceFile": "toaplan/d_mahoudai.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 37
+        }
+      ]
+    },
+    {
+      "id": "shippumd",
+      "title": "Shippu Mahou Daisakusen (Japan)",
+      "year": "1994",
+      "manufacturer": "Raizing / Eighting",
+      "cloneOf": "kingdmgp",
+      "romOf": "kingdmgp",
+      "parentTitle": "Kingdom Grandprix",
+      "sourceFile": "toaplan/d_shippumd.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 38
+        }
+      ]
+    },
+    {
+      "id": "dimahoo",
+      "title": "Dimahoo (Europe 000121)",
+      "year": "2000",
+      "manufacturer": "Eighting / Raizing (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 39
+        }
+      ]
+    },
+    {
+      "id": "gigawing",
+      "title": "Giga Wing (USA 990222)",
+      "year": "1999",
+      "manufacturer": "Takumi (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 40
+        }
+      ]
+    },
+    {
+      "id": "mmatrix",
+      "title": "Mars Matrix: Hyper Solid Shooting (USA 000412)",
+      "year": "2000",
+      "manufacturer": "Takumi (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 41
+        }
+      ]
+    },
+    {
+      "id": "progear",
+      "title": "Progear (Europe 010117)",
+      "year": "2001",
+      "manufacturer": "Cave (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 42
+        }
+      ]
+    },
+    {
+      "id": "soldivid",
+      "title": "Sol Divide: Sword Of Darkness",
+      "year": "1997",
+      "manufacturer": "Psikyo",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 43
+        }
+      ]
+    },
+    {
+      "id": "stdragon",
+      "title": "Saint Dragon (set 1)",
+      "year": "1989",
+      "manufacturer": "Jaleco / NMK",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_megasys1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 44
+        }
+      ]
+    },
+    {
+      "id": "strkfgtr",
+      "title": "Strike Fighter (World)",
+      "year": "1991",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_ybrd.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "shoot-em-up",
+          "name": "Shoot ’Em Up",
+          "order": 45
+        }
+      ]
+    },
+    {
+      "id": "snowbros",
+      "title": "Snow Bros. - Nick & Tom (set 1)",
+      "year": "1990",
+      "manufacturer": "Toaplan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_hyperpac.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "snowbro2",
+      "title": "Snow Bros. 2 - With New Elves / Otenki Paradise (Hanafram)",
+      "year": "1994",
+      "manufacturer": "Hanafram",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "toaplan/d_snowbro2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "bublbobl",
+      "title": "Bubble Bobble (Japan, Ver 0.1)",
+      "year": "1986",
+      "manufacturer": "Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_bublbobl.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "bublbob2",
+      "title": "Bubble Bobble II (Ver 2.6O 1994/12/16)",
+      "year": "1994",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "pang",
+      "title": "Pang (World)",
+      "year": "1989",
+      "manufacturer": "Mitchell",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_mitchell.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "pang3",
+      "title": "Pang! 3 (Europe 950601)",
+      "year": "1995",
+      "manufacturer": "Mitchell",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps1.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "spang",
+      "title": "Super Pang (World 900914)",
+      "year": "1990",
+      "manufacturer": "Mitchell",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_mitchell.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "pbobblen",
+      "title": "Puzzle Bobble / Bust-A-Move (Neo-Geo, NGM-083)",
+      "year": "1994",
+      "manufacturer": "Taito",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "pbobble2",
+      "title": "Puzzle Bobble 2 (Ver 2.3O 1995/07/31)",
+      "year": "1995",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "pbobble3",
+      "title": "Puzzle Bobble 3 (Ver 2.1O 1996/09/27)",
+      "year": "1996",
+      "manufacturer": "Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "pbobble4",
+      "title": "Puzzle Bobble 4 (Ver 2.04O 1997/12/19)",
+      "year": "1997",
+      "manufacturer": "Taito Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitof3.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "magdrop",
+      "title": "Magical Drop (Japan, Version 1.1, 1995.06.21)",
+      "year": "1995",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": "chainrec",
+      "romOf": "chainrec",
+      "parentTitle": "Chain Reaction (World, Version 2.2, 1995.09.25)",
+      "sourceFile": "dataeast/d_simpl156.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "magdrop2",
+      "title": "Magical Drop II",
+      "year": "1996",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "magdrop3",
+      "title": "Magical Drop III",
+      "year": "1997",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "puyo",
+      "title": "Puyo Puyo (World)",
+      "year": "1992",
+      "manufacturer": "Compile / Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_segac2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "puyopuy2",
+      "title": "Puyo Puyo 2 (Japan)",
+      "year": "1994",
+      "manufacturer": "Compile (Sega license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_segac2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "tetris",
+      "title": "Tetris (set 4, Japan, System 16A) (FD1094 317-0093)",
+      "year": "1988",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_sys16a.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "tetrisp",
+      "title": "Tetris Plus (ver 1.0)",
+      "year": "1995",
+      "manufacturer": "Jaleco / BPS",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_ms32.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "tetrisp2",
+      "title": "Tetris Plus 2 (World, V2.8)",
+      "year": "1997",
+      "manufacturer": "Jaleco / The Tetris Company",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_tetrisp2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "tgm2",
+      "title": "Tetris: The Absolute - The Grand Master 2",
+      "year": "2000",
+      "manufacturer": "Arika",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "psikyo/d_psikyosh.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "mpang",
+      "title": "Mighty! Pang (Europe 001010)",
+      "year": "2000",
+      "manufacturer": "Mitchell (Capcom license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "capcom/d_cps2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "chainrec",
+      "title": "Chain Reaction (World, Version 2.2, 1995.09.25)",
+      "year": "1995",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "dataeast/d_simpl156.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "puzzloop",
+      "title": "Puzz Loop (Europe, v0.94)",
+      "year": "1998",
+      "manufacturer": "Mitchell",
+      "cloneOf": null,
+      "romOf": "skns",
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_suprnova.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "puzzle",
+          "name": "Puzzle & Eğlence",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "wjammers",
+      "title": "Windjammers / Flying Power Disc",
+      "year": "1994",
+      "manufacturer": "Data East Corporation",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "turfmast",
+      "title": "Neo Turf Masters / Big Tournament Golf",
+      "year": "1996",
+      "manufacturer": "Nazca",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "neodrift",
+      "title": "Neo Drift Out - New Technology",
+      "year": "1996",
+      "manufacturer": "Visco",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "ssideki",
+      "title": "Super Sidekicks / Tokuten Ou",
+      "year": "1992",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "ssideki2",
+      "title": "Super Sidekicks 2 - The World Championship / Tokuten Ou 2 - Real Fight Football (NGM-061 ~ NGH-061)",
+      "year": "1994",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "ssideki3",
+      "title": "Super Sidekicks 3 - The Next Glory / Tokuten Ou 3 - Eikou e no Chousen",
+      "year": "1995",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "neocup98",
+      "title": "Neo-Geo Cup '98 - The Road to the Victory",
+      "year": "1998",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "fbfrenzy",
+      "title": "Football Frenzy (NGM-034 ~ NGH-034)",
+      "year": "1992",
+      "manufacturer": "SNK",
+      "cloneOf": null,
+      "romOf": "neogeo",
+      "parentTitle": null,
+      "sourceFile": "neogeo/d_neogeo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "tehkanwc",
+      "title": "Tehkan World Cup (set 1)",
+      "year": "1985",
+      "manufacturer": "Tehkan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pre90s/d_tehkanwc.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "trackfld",
+      "title": "Track & Field",
+      "year": "1983",
+      "manufacturer": "Konami",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_trackfld.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "hyperspt",
+      "title": "Hyper Sports",
+      "year": "1984",
+      "manufacturer": "Konami (Centuri license)",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "konami/d_hyperspt.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "outrun",
+      "title": "Out Run (sitdown/upright, Rev B)",
+      "year": "1986",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_outrun.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "hangon",
+      "title": "Hang-On (Rev A)",
+      "year": "1985",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_hangon.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "sharrier",
+      "title": "Space Harrier (Rev A, 8751 315-5163A)",
+      "year": "1985",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_hangon.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "pdrift",
+      "title": "Power Drift (World, Rev A)",
+      "year": "1988",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_ybrd.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "finallap",
+      "title": "Final Lap (Rev E)",
+      "year": "1987",
+      "manufacturer": "Namco",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "pst90s/d_namcos2.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "smgp",
+      "title": "Super Monaco GP (World, Rev B) (FD1094 317-0126a)",
+      "year": "1989",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_xbrd.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "radr",
+      "title": "Rad Rally (World)",
+      "year": "1991",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_segas32.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "turbo",
+      "title": "Turbo (program 1513-1515)",
+      "year": "1981",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_turbo.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "aburner2",
+      "title": "After Burner II (VER 2.00, deluxe/upright)",
+      "year": "1987",
+      "manufacturer": "Sega",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "sega/d_xbrd.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "thndblst",
+      "title": "Thunder Blaster (Japan)",
+      "year": "1991",
+      "manufacturer": "Irem",
+      "cloneOf": "lethalth",
+      "romOf": "lethalth",
+      "parentTitle": "Lethal Thunder (World)",
+      "sourceFile": "irem/d_m92.cpp",
+      "isClone": true,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "chasehq",
+      "title": "Chase H.Q. (World)",
+      "year": "1988",
+      "manufacturer": "Taito Corporation Japan",
+      "cloneOf": null,
+      "romOf": null,
+      "parentTitle": null,
+      "sourceFile": "taito/d_taitoz.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "sports-racing",
+          "name": "Spor & Yarış",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "kov",
+      "title": "Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)",
+      "year": "1999",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "kovsh",
+      "title": "Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 104, CN)",
+      "year": "1999",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "kovplus",
+      "title": "Knights of Valour Plus / San Guo Zhan Ji - Zheng Zong Plus / Sangoku Senki Masamune Plus (ver. 119, set 1)",
+      "year": "1999",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "orlegend",
+      "title": "Oriental Legend / Xiyou Shi E Zhuan (ver. 126)",
+      "year": "1997",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "olds",
+      "title": "Oriental Legend Super / Xiyou Shi E Zhuan Super (ver. 101, Korean Board)",
+      "year": "1998",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "photoy2k",
+      "title": "Photo Y2K / Chaoji Bi Yi Bi / Dajia Lai Zhao Cha / Real and Fake (ver. 105)",
+      "year": "1999",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "dmnfrnt",
+      "title": "Demon Front / Moyu Zhanxian (68k label V105, ROM M105XX 08/05/02) (ARM label V105, ROM 08/05/02 S105XX)",
+      "year": "2002",
+      "manufacturer": "IGS",
+      "cloneOf": null,
+      "romOf": "pgm",
+      "parentTitle": null,
+      "sourceFile": "pgm/d_pgm.cpp",
+      "isClone": false,
+      "metadataMatched": true,
+      "categories": [
+        {
+          "id": "igs",
+          "name": "IGS (Kore / Asya Salonları)",
+          "order": 7
+        }
+      ]
+    }
+  ]
+}
